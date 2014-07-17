@@ -36,7 +36,7 @@ public class HandleMap {
 		if(mapsInstalled){
 			
 			 String geoCode = "geo:0,0?q=" + location.GetCurrentLocation()[0] + ","
-		                + location.GetCurrentLocation()[1] + "(" + "Here!" + ")";
+		                + location.GetCurrentLocation()[1] + "(" + "You were here" + ")";
 		        Intent sendLocationToMap = new Intent(Intent.ACTION_VIEW,
 		                Uri.parse(geoCode));
 		        mainActivity.startActivity(sendLocationToMap);
